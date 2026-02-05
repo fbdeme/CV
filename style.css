@@ -587,4 +587,14 @@ body {
         display: inline-block;
         margin-bottom: 1rem;
     }
+
+    .social-links {
+        width: 90%;
+        margin-top: 2rem;
+    }
+
+    .social-links a {
+        font-size: 2.5rem;
+        /* Adjusted for mobile */
+    }
 }
