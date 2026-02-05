@@ -527,7 +527,7 @@ body {
 }
 
 .email-link {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 800;
     background: linear-gradient(to right, var(--text-color), var(--primary));
     -webkit-background-clip: text;
@@ -536,25 +536,27 @@ body {
     transition: letter-spacing 0.3s;
 }
 
-letter-spacing: 2px;
+.email-link:hover {
+    letter-spacing: 2px;
 }
 
 .social-links {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
+    justify-content: space-between;
+    gap: 0;
+    margin-top: 3rem;
+    padding: 0 1rem;
 }
 
 .social-links a {
-    font-size: 2rem;
+    font-size: 4rem;
     color: var(--text-color);
     transition: all 0.3s ease;
 }
 
 .social-links a:hover {
     color: var(--primary);
-    transform: translateY(-3px);
+    transform: translateY(-5px);
 }
 
 /* Mobile */
