@@ -1,0 +1,42 @@
+- title: Education
+  type: time_table
+  contents:
+    - title: M.S. in Business IT
+      institution: Kookmin University, Seoul
+      year: 2022.03 - 2024.02
+      description: GPA 4.11/4.5
+
+    - title: B.S. in Computer Engineering
+      institution: Academic Credit Bank System
+      year: 2020.03 - 2022.02
+      description: GPA 4.2/4.5
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: AI Research Engineer
+      institution: AIO2O Inc.
+      year: 2024.07 - Present
+      description: >
+        - Developing Negotiation Strategy Engine for B2B commerce (KT Commerce).<br>
+        - Built automated marketing content generation system (DB Insurance).<br>
+        - Created tourism recommendation ranking logic (Visit Busan).
+
+    - title: Founder & Research Lead
+      institution: DE Lab (ModuLabs)
+      year: 2024.12 - Present
+      description: >
+        - Leading Graph ML & LLM research.<br>
+        - Published 4 papers at NeurIPS/CIKM 2025 Workshops.
+
+    - title: Researcher
+      institution: MAI (Medical AI) Lab
+      year: 2025.08 - 2025.12
+      description: Research on Multi-modal Medical AI (EEG-to-Text).
+
+- title: Skills
+  type: list
+  contents:
+    - PyTorch, Python, Pandas, NumPy, TensorFlow
+    - Linux, Ubuntu, Git, Docker
+    - Django, ReactJS, JavaScript
