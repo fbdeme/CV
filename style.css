@@ -536,8 +536,25 @@ body {
     transition: letter-spacing 0.3s;
 }
 
-.email-link:hover {
-    letter-spacing: 2px;
+letter-spacing: 2px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.social-links a {
+    font-size: 2rem;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary);
+    transform: translateY(-3px);
 }
 
 /* Mobile */
