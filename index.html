@@ -46,6 +46,8 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero">
+        <div class="glow-blob blob-1"></div>
+        <div class="glow-blob blob-2"></div>
         <div class="container">
             <div class="hero-content">
                 <span class="greeting">Hello, I'm</span>
@@ -62,11 +64,7 @@
                 </div>
             </div>
         </div>
-        <div class="scroll-down">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-        </div>
+
     </section>
 
     <!-- About Section -->
@@ -76,37 +74,35 @@
             <div class="about-grid">
                 <div class="about-image">
                     <div class="image-wrapper">
-                        <img src="assets/img/prof_pic.jpg" alt="Mingyu Jeon">
+                        <!-- Updated Profile Picture -->
+                        <img src="assets/img/prof_pic_new.png" alt="Mingyu Jeon">
                     </div>
                 </div>
                 <div class="about-text">
-                    <p class="bio">
-                        I am currently a <strong>Research Engineer at AIO2O</strong> and the <strong>Founder of DE Lab
-                            (ModuLabs)</strong>.
-                        I received my M.S. in Business IT from <strong>Kookmin University</strong> (GPA 4.11/4.5).
-                    </p>
-                    <p class="bio">
-                        My research lies at the intersection of <strong>Large Language Models (LLMs)</strong> and
-                        <strong>Graph Machine Learning</strong>.
-                        I am passionate about building systems that reason and negotiate, applying these technologies
-                        to:
-                    </p>
-                    <ul class="interests-list">
-                        <li><i class="fas fa-brain"></i> <span><strong>Medical AI:</strong> Multi-modal analysis (EEG &
-                                Text)</span></li>
-                        <li><i class="fas fa-handshake"></i> <span><strong>Commerce & Negotiation:</strong> Agentic
-                                workflows for automated systems</span></li>
-                        <li><i class="fas fa-project-diagram"></i> <span><strong>Knowledge Graphs:</strong> RAG and
-                                schema matching</span></li>
-                    </ul>
-                    <div class="stats">
-                        <div class="stat-item">
-                            <span class="stat-number">4+</span>
-                            <span class="stat-label">Publications</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">2+</span>
-                            <span class="stat-label">Years Exp.</span>
+                    <div class="glass-card">
+                        <p class="bio-text">
+                            I am currently a <strong>Research Engineer at AIO2O</strong> and the <strong>Founder of DE
+                                Lab
+                                (ModuLabs)</strong>.
+                            I received my M.S. in Business IT from <strong>Kookmin University</strong> (GPA 4.11/4.5).
+                        </p>
+                        <p class="bio-text" style="margin-top: 1rem;">
+                            My research lies at the intersection of <strong>Large Language Models (LLMs)</strong> and
+                            <strong>Graph Machine Learning</strong>.
+                            I am passionate about building systems that reason and negotiate, applying these
+                            technologies
+                            to:
+                        </p>
+
+                        <div class="bio-stats">
+                            <div class="stat-box">
+                                <span class="stat-num">4+</span>
+                                <span class="stat-label">Publications</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-num">2+</span>
+                                <span class="stat-label">Years Exp.</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -131,9 +127,6 @@
                         <h3 class="paper-title">A DELTA: Language Diffusion-based EEG-to-Text Architecture</h3>
                         <p class="paper-authors"><strong>Mingyu Jeon</strong>, Hyobin Kim</p>
                         <p class="paper-venue">NeurIPS Workshop on Foundation Models for the Brain and Body</p>
-                        <div class="paper-links">
-                            <!-- <a href="#" class="link-btn"><i class="fas fa-file-pdf"></i> PDF</a> -->
-                        </div>
                     </div>
                 </div>
 
@@ -249,49 +242,41 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section (Updated to List View) -->
     <section id="projects" class="section">
         <div class="container">
             <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
+            <div class="papers-list">
 
                 <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="assets/img/chat_thumbnail.jpg" alt="Vercel CharacterChat">
-                        <div class="overlay">
-                            <a href="https://github.com/tjwodud04/Vercel_CharacterChat" target="_blank"><i
-                                    class="fab fa-github"></i></a>
+                <div class="paper-card">
+                    <div class="paper-content">
+                        <div class="paper-header">
+                            <span class="badge" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8;">LLM</span>
+                            <span class="badge" style="background: rgba(16, 185, 129, 0.15); color: #10b981;">Open
+                                Source</span>
                         </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Vercel CharacterChat</h3>
-                        <p>LLM-based Character Interaction Service. Open-source project for character-based interaction.
-                        </p>
-                        <div class="tags">
-                            <span>LLM</span>
-                            <span>Next.js</span>
-                            <span>Open Source</span>
+                        <h3 class="paper-title">Vercel CharacterChat</h3>
+                        <p class="paper-venue">LLM-based Character Interaction Service based on Vercel AI SDK.</p>
+                        <div class="paper-links">
+                            <a href="https://github.com/tjwodud04/Vercel_CharacterChat" target="_blank"
+                                class="link-btn"><i class="fab fa-github"></i> Repository</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="assets/img/estate_thumbnail.jpg" alt="KoreaEstate Query">
-                        <div class="overlay">
-                            <a href="https://github.com/tjwodud04/KoreaEstateQuery" target="_blank"><i
-                                    class="fab fa-github"></i></a>
+                <div class="paper-card">
+                    <div class="paper-content">
+                        <div class="paper-header">
+                            <span class="badge" style="background: rgba(244, 114, 182, 0.15); color: #f472b6;">Data
+                                Analysis</span>
                         </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>KoreaEstate Query</h3>
-                        <p>Real estate data query system for Korean market analysis.</p>
-                        <div class="tags">
-                            <span>Data Analysis</span>
-                            <span>Python</span>
-                            <span>Real Estate</span>
+                        <h3 class="paper-title">KoreaEstate Query</h3>
+                        <p class="paper-venue">Real estate data query system for Korean market analysis.</p>
+                        <div class="paper-links">
+                            <a href="https://github.com/tjwodud04/KoreaEstateQuery" target="_blank" class="link-btn"><i
+                                    class="fab fa-github"></i> Repository</a>
                         </div>
                     </div>
                 </div>
