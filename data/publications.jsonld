@@ -314,7 +314,10 @@
           "presentedAt": "venue:smart-media-journal",
           "year": 2023,
           "badges": ["Domestic"],
-          "archives": []
+          "archives": [
+            { "type": "paper", "id": "KCI:ART002972222", "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002972222" },
+            { "type": "doi", "id": "10.30693/SMJ.2023.12.5.17", "url": "https://doi.org/10.30693/SMJ.2023.12.5.17" }
+          ]
         }
       ]
     }
