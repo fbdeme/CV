@@ -1,32 +1,46 @@
-name: Update Publications from Semantic Scholar
+name: Render Publications and Deploy
 
 on:
-  schedule:
-    - cron: '0 9 * * 1'  # Every Monday at 9:00 UTC
+  push:
+    paths:
+      - 'data/publications.jsonld'
+      - 'scripts/render_publications.py'
   workflow_dispatch:  # Manual trigger
 
 permissions:
   contents: write
 
 jobs:
-  update-papers:
+  render-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Need full history for gh-pages
 
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Update publications
-        run: python scripts/update_papers.py
+      - name: Render publications from JSON-LD
+        run: python scripts/render_publications.py
 
-      - name: Commit and push if changed
+      - name: Commit to main if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git diff --quiet data/publications.json || {
-            git add data/publications.json
-            git commit -m "chore: auto-update publications from Semantic Scholar"
-            git push
+          git diff --quiet index.html || {
+            git add index.html
+            git commit -m "chore: auto-render publications from JSON-LD"
+            git push origin main
+          }
+
+      - name: Sync to gh-pages
+        run: |
+          git checkout gh-pages
+          git checkout main -- index.html style.css data/ scripts/ assets/
+          git diff --cached --quiet || {
+            git add -A
+            git commit -m "chore: sync from main after publications render"
+            git push origin gh-pages
           }
