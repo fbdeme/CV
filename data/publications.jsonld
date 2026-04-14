@@ -284,6 +284,7 @@
       "label": "Emotion-Aware Conversational Agents",
       "topics": ["topic:conversational-agents"],
       "contributors": ["agent:jaeyoung-suh", "agent:mingyu-jeon"],
+      "thumbnail": "assets/img/papers/emotion-agent.png",
       "manifestations": [
         {
           "@id": "paper:cikm2025-emotion",
@@ -304,6 +305,7 @@
       "label": "Semantic Pre-training for Text Summarization",
       "topics": ["topic:text-summarization"],
       "contributors": ["agent:mingyu-jeon", "agent:namgyu-kim"],
+      "thumbnail": "assets/img/papers/summarization.png",
       "manifestations": [
         {
           "@id": "paper:smartmedia2023",
