@@ -1,0 +1,320 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "fabio": "http://purl.org/spar/fabio/",
+    "cito": "http://purl.org/spar/cito/",
+    "Work": "fabio:Work",
+    "Manifestation": "fabio:Manifestation",
+    "Venue": "fabio:Venue",
+    "Agent": "schema:Person",
+    "Topic": "schema:DefinedTerm",
+    "Archive": "schema:Service",
+    "CodeRepository": "schema:SoftwareSourceCode",
+    "manifestations": "fabio:hasManifestation",
+    "archives": "fabio:hasPortrayal",
+    "presentedAt": "schema:publishedAt",
+    "partOf": "schema:isPartOf",
+    "relatedTo": "schema:relatedLink"
+  },
+
+  "topics": [
+    {
+      "@id": "topic:medical-ai",
+      "@type": "Topic",
+      "name": "Medical AI",
+      "description": "Multi-modal analysis combining EEG signals and natural language"
+    },
+    {
+      "@id": "topic:llm-negotiation",
+      "@type": "Topic",
+      "name": "LLM Negotiation & Commerce",
+      "description": "Strategic dialogue and behavioral simulation of LLMs in negotiation scenarios",
+      "relatedTo": ["topic:conversational-agents"]
+    },
+    {
+      "@id": "topic:knowledge-graph",
+      "@type": "Topic",
+      "name": "Knowledge Graph & QA",
+      "description": "Graph-based reasoning and question answering over knowledge graphs",
+      "relatedTo": ["topic:schema-matching"]
+    },
+    {
+      "@id": "topic:schema-matching",
+      "@type": "Topic",
+      "name": "Schema Matching & Data Integration",
+      "description": "KG-augmented schema alignment for heterogeneous data systems",
+      "relatedTo": ["topic:knowledge-graph"]
+    },
+    {
+      "@id": "topic:conversational-agents",
+      "@type": "Topic",
+      "name": "Conversational Agents",
+      "description": "Emotion-aware and proactive dialogue systems",
+      "relatedTo": ["topic:llm-negotiation"]
+    },
+    {
+      "@id": "topic:text-summarization",
+      "@type": "Topic",
+      "name": "Text Summarization",
+      "description": "Semantic pre-training methods for improving text summarization quality"
+    }
+  ],
+
+  "agents": [
+    { "@id": "agent:mingyu-jeon", "@type": "Agent", "name": "Mingyu Jeon", "self": true },
+    { "@id": "agent:hyobin-kim", "@type": "Agent", "name": "Hyobin Kim" },
+    { "@id": "agent:jaeyoung-suh", "@type": "Agent", "name": "Jaeyoung Suh" },
+    { "@id": "agent:suwan-cho", "@type": "Agent", "name": "Suwan Cho" },
+    { "@id": "agent:dohyeon-kim", "@type": "Agent", "name": "Dohyeon Kim" },
+    { "@id": "agent:namgyu-kim", "@type": "Agent", "name": "Namgyu Kim" }
+  ],
+
+  "venues": [
+    {
+      "@id": "venue:icassp-2026",
+      "@type": "Venue",
+      "name": "ICASSP 2026",
+      "fullName": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+      "url": "https://2026.ieeeicassp.org/",
+      "year": 2026,
+      "tier": "conference"
+    },
+    {
+      "@id": "venue:neurips-ws-brainbodyfm-2025",
+      "@type": "Venue",
+      "name": "NeurIPS WS BrainBodyFM",
+      "fullName": "NeurIPS Workshop on Foundation Models for the Brain and Body",
+      "url": "https://brainbodyfm-workshop.github.io/",
+      "year": 2025,
+      "tier": "workshop",
+      "partOf": "venue:neurips-2025"
+    },
+    {
+      "@id": "venue:neurips-2025",
+      "@type": "Venue",
+      "name": "NeurIPS 2025",
+      "fullName": "Conference on Neural Information Processing Systems",
+      "year": 2025,
+      "tier": "conference"
+    },
+    {
+      "@id": "venue:neurips-ws-langame-2024",
+      "@type": "Venue",
+      "name": "NeurIPS WS LanGame",
+      "fullName": "NeurIPS Workshop on Language Gamification",
+      "url": "https://language-gamification.github.io/",
+      "year": 2024,
+      "tier": "workshop",
+      "partOf": "venue:neurips-2024"
+    },
+    {
+      "@id": "venue:neurips-2024",
+      "@type": "Venue",
+      "name": "NeurIPS 2024",
+      "fullName": "Conference on Neural Information Processing Systems",
+      "year": 2024,
+      "tier": "conference"
+    },
+    {
+      "@id": "venue:cikm-ws-gmllm-2025",
+      "@type": "Venue",
+      "name": "CIKM WS GMLLM",
+      "fullName": "CIKM Workshop on Frontiers in Graph Machine Learning",
+      "url": "https://openreview.net/group?id=ACM.org/CIKM/2025/Workshop/GMLLM",
+      "year": 2025,
+      "tier": "workshop",
+      "partOf": "venue:cikm-2025"
+    },
+    {
+      "@id": "venue:cikm-ws-proactllm-2025",
+      "@type": "Venue",
+      "name": "CIKM WS ProActLLM",
+      "fullName": "CIKM Workshop on Proactive Conversational Information Seeking",
+      "url": "https://proactllm.github.io/",
+      "year": 2025,
+      "tier": "workshop",
+      "partOf": "venue:cikm-2025"
+    },
+    {
+      "@id": "venue:cikm-2025",
+      "@type": "Venue",
+      "name": "CIKM 2025",
+      "fullName": "ACM International Conference on Information and Knowledge Management",
+      "year": 2025,
+      "tier": "conference"
+    },
+    {
+      "@id": "venue:arxiv",
+      "@type": "Venue",
+      "name": "arXiv",
+      "url": "https://arxiv.org",
+      "tier": "preprint"
+    },
+    {
+      "@id": "venue:smart-media-journal",
+      "@type": "Venue",
+      "name": "스마트미디어저널",
+      "fullName": "Smart Media Journal",
+      "year": 2023,
+      "tier": "journal-domestic"
+    }
+  ],
+
+  "works": [
+    {
+      "@id": "work:eeg-to-text",
+      "@type": "Work",
+      "label": "EEG-to-Text Research",
+      "topics": ["topic:medical-ai"],
+      "contributors": ["agent:mingyu-jeon", "agent:hyobin-kim"],
+      "thumbnail": "assets/img/papers/delta.png",
+      "code": {
+        "@id": "repo:delta",
+        "@type": "CodeRepository",
+        "url": "https://github.com/fbdeme/DELTA-Language-Diffusion-based-EEG-to-Text-Architecture"
+      },
+      "manifestations": [
+        {
+          "@id": "paper:icassp2026-eeg",
+          "@type": "Manifestation",
+          "title": "EEG-to-Text as Restoration: A Discrete Diffusion Framework for Robust BCI",
+          "presentedAt": "venue:icassp-2026",
+          "year": 2026,
+          "badges": ["ICASSP"],
+          "archives": []
+        },
+        {
+          "@id": "paper:neurips2025-delta",
+          "@type": "Manifestation",
+          "title": "DELTA: Language Diffusion-based EEG-to-Text Architecture",
+          "presentedAt": "venue:neurips-ws-brainbodyfm-2025",
+          "year": 2025,
+          "badges": ["NeurIPS", "Travel Award"],
+          "archives": [
+            { "type": "arxiv", "id": "2511.21746", "url": "https://arxiv.org/abs/2511.21746" },
+            { "type": "openreview", "id": "Hw3wWRyLs4", "url": "https://openreview.net/forum?id=Hw3wWRyLs4" }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "work:llm-negotiation",
+      "@type": "Work",
+      "label": "LLM Negotiation Behavior",
+      "topics": ["topic:llm-negotiation"],
+      "contributors": ["agent:mingyu-jeon", "agent:jaeyoung-suh", "agent:suwan-cho", "agent:dohyeon-kim"],
+      "thumbnail": "assets/img/papers/negotiation.jpg",
+      "code": {
+        "@id": "repo:negotiation",
+        "@type": "CodeRepository",
+        "url": "https://github.com/fbdeme/Mimicking-Human-Emotions-Persona-Driven-Behavior-of-LLMs-in-the-Buy-and-Sell-Negotiation-Game"
+      },
+      "manifestations": [
+        {
+          "@id": "paper:neurips2024-negotiation",
+          "@type": "Manifestation",
+          "title": "Mimicking Human Emotions: Persona-Driven Behavior of LLMs in the Buy-and-Sell Negotiation Game",
+          "authors": ["agent:mingyu-jeon", "agent:jaeyoung-suh"],
+          "presentedAt": "venue:neurips-ws-langame-2024",
+          "year": 2024,
+          "badges": ["NeurIPS"],
+          "archives": [
+            { "type": "openreview", "id": "j7RkeNqSDo", "url": "https://openreview.net/forum?id=j7RkeNqSDo" }
+          ]
+        },
+        {
+          "@id": "paper:arxiv2025-negotiation",
+          "@type": "Manifestation",
+          "title": "How Far Can LLMs Emulate Human Behavior?: A Strategic Analysis via the Buy-and-Sell Negotiation Game",
+          "authors": ["agent:mingyu-jeon", "agent:jaeyoung-suh", "agent:suwan-cho", "agent:dohyeon-kim"],
+          "presentedAt": "venue:arxiv",
+          "year": 2025,
+          "badges": [],
+          "archives": [
+            { "type": "arxiv", "id": "2511.17990", "url": "https://arxiv.org/abs/2511.17990" }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "work:kgqa",
+      "@type": "Work",
+      "label": "Knowledge Graph Question Answering",
+      "topics": ["topic:knowledge-graph"],
+      "contributors": ["agent:mingyu-jeon", "agent:suwan-cho", "agent:jaeyoung-suh"],
+      "thumbnail": "assets/img/papers/ppoga.png",
+      "manifestations": [
+        {
+          "@id": "paper:cikm2025-ppoga",
+          "@type": "Manifestation",
+          "title": "PPoGA: Predictive Plan-on-Graph with Action for Knowledge Graph Question Answering",
+          "presentedAt": "venue:cikm-ws-gmllm-2025",
+          "year": 2025,
+          "badges": ["CIKM", "Oral"],
+          "archives": [
+            { "type": "arxiv", "id": "2602.00007", "url": "https://arxiv.org/abs/2602.00007" }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "work:schema-matching",
+      "@type": "Work",
+      "label": "Schema Matching on Graph",
+      "topics": ["topic:schema-matching"],
+      "contributors": ["agent:mingyu-jeon", "agent:jaeyoung-suh", "agent:suwan-cho"],
+      "thumbnail": "assets/img/papers/smog.png",
+      "manifestations": [
+        {
+          "@id": "paper:arxiv2025-smog",
+          "@type": "Manifestation",
+          "title": "Schema Matching on Graph: Iterative Graph Exploration for Efficient and Explainable Data Integration",
+          "presentedAt": "venue:arxiv",
+          "year": 2025,
+          "badges": [],
+          "archives": [
+            { "type": "arxiv", "id": "2511.20285", "url": "https://arxiv.org/abs/2511.20285" }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "work:emotion-agent",
+      "@type": "Work",
+      "label": "Emotion-Aware Conversational Agents",
+      "topics": ["topic:conversational-agents"],
+      "contributors": ["agent:jaeyoung-suh", "agent:mingyu-jeon"],
+      "manifestations": [
+        {
+          "@id": "paper:cikm2025-emotion",
+          "@type": "Manifestation",
+          "title": "A Modular Prototype of Emotion-Aware Proactive Conversational Agents",
+          "presentedAt": "venue:cikm-ws-proactllm-2025",
+          "year": 2025,
+          "badges": ["CIKM", "Oral"],
+          "archives": [
+            { "type": "engrxiv", "id": "5993", "url": "https://engrxiv.org/preprint/view/5993" }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "work:text-summarization",
+      "@type": "Work",
+      "label": "Semantic Pre-training for Text Summarization",
+      "topics": ["topic:text-summarization"],
+      "contributors": ["agent:mingyu-jeon", "agent:namgyu-kim"],
+      "manifestations": [
+        {
+          "@id": "paper:smartmedia2023",
+          "@type": "Manifestation",
+          "title": "텍스트 요약 품질 향상을 위한 의미적 사전학습 방법론",
+          "presentedAt": "venue:smart-media-journal",
+          "year": 2023,
+          "badges": ["Domestic"],
+          "archives": []
+        }
+      ]
+    }
+  ]
+}
