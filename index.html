@@ -4,305 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mingyu Jeon | AI Research Engineer</title>
-    <meta name="description" content="Academic Portfolio of Mingyu Jeon - AI Research Engineer specializing in LLM & Graph ML.">
-    
-    <!-- Google Fonts -->
+    <meta name="description" content="Academic page of Mingyu Jeon - AI Research Engineer specializing in LLM & Graph ML.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">Mingyu Jeon.</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li id="theme-toggle"><i class="fas fa-moon"></i></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </div>
-    </nav>
+<div class="container">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <span class="greeting">Hello, I'm</span>
-                <h1 class="name">Mingyu Jeon</h1>
-                <h2 class="role">AI Research Engineer <span class="highlight">& Ph.D. Candidate</span></h2>
-                <div class="typing-container">
-                    <span id="typing-text"></span><span class="cursor">|</span>
-                </div>
-                <p class="hero-desc">Specializing in <strong>Large Language Models (LLMs)</strong> and <strong>Graph Machine Learning</strong>.</p>
-                <div class="cta-buttons">
-                    <a href="#publications" class="btn btn-primary">View Publications</a>
-                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+    <!-- Bio Section -->
+    <header id="bio">
+        <div class="bio-grid">
+            <div class="bio-photo">
+                <img src="assets/img/prof_pic.jpg" alt="Mingyu Jeon">
+            </div>
+            <div class="bio-info">
+                <h1>Mingyu Jeon</h1>
+                <p class="bio-role">AI Research Engineer &amp; Ph.D. Candidate</p>
+                <p class="bio-affiliation">AIO2O Inc. &middot; DE Lab (ModuLabs)</p>
+                <p class="bio-text" id="bio-text"></p>
+                <div class="bio-links" id="bio-links">
+                    <!-- Rendered by JS -->
                 </div>
             </div>
         </div>
-        <div class="scroll-down">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
+    </header>
+
+    <!-- News -->
+    <section id="news">
+        <h2>News</h2>
+        <ul class="news-list">
+            <li><span class="news-date">2026.01</span> Paper accepted at <strong>ICASSP 2026</strong> — EEG-to-Text as Restoration</li>
+            <li><span class="news-date">2025.12</span> <strong>Travel Award</strong> at NeurIPS 2025 Workshop (Foundation Models for the Brain and Body)</li>
+            <li><span class="news-date">2025.10</span> Two <strong>Oral</strong> presentations at CIKM 2025 Workshops</li>
+            <li><span class="news-date">2024.12</span> Founded <strong>DE Lab</strong> at ModuLabs</li>
+            <li><span class="news-date">2024.10</span> Paper presented at <strong>NeurIPS 2024</strong> Workshop on Language Gamification</li>
+        </ul>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications">
+        <h2>Publications</h2>
+        <p class="section-note">* denotes equal contribution. <a href="" id="scholar-link" target="_blank">Full list on Google Scholar</a>.</p>
+        <div id="papers-list">
+            <!-- Rendered by JS from publications.json -->
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                <div class="about-image">
-                    <div class="image-wrapper">
-                        <img src="assets/img/prof_pic.jpg" alt="Mingyu Jeon">
-                    </div>
-                </div>
-                <div class="about-text">
-                    <p class="bio">
-                        I am currently a <strong>Research Engineer at AIO2O</strong> and the <strong>Founder of DE Lab (ModuLabs)</strong>. 
-                        I received my M.S. in Business IT from <strong>Kookmin University</strong> (GPA 4.11/4.5).
-                    </p>
-                    <p class="bio">
-                        My research lies at the intersection of <strong>Large Language Models (LLMs)</strong> and <strong>Graph Machine Learning</strong>. 
-                        I am passionate about building systems that reason and negotiate, applying these technologies to:
-                    </p>
-                    <ul class="interests-list">
-                        <li><i class="fas fa-brain"></i> <span><strong>Medical AI:</strong> Multi-modal analysis (EEG & Text)</span></li>
-                        <li><i class="fas fa-handshake"></i> <span><strong>Commerce & Negotiation:</strong> Agentic workflows for automated systems</span></li>
-                        <li><i class="fas fa-project-diagram"></i> <span><strong>Knowledge Graphs:</strong> RAG and schema matching</span></li>
-                    </ul>
-                    <div class="stats">
-                        <div class="stat-item">
-                            <span class="stat-number">4+</span>
-                            <span class="stat-label">Publications</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">2+</span>
-                            <span class="stat-label">Years Exp.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Experience & Education -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div id="experience-list">
+            <!-- Rendered by JS -->
         </div>
     </section>
 
-    <!-- Publications Section -->
-    <section id="publications" class="section">
-        <div class="container">
-            <h2 class="section-title">Selected Publications</h2>
-            <div class="papers-list">
-                <!-- Wrapper for papers -->
-                
-                <!-- Paper 1 -->
-                <div class="paper-card" data-year="2025" data-venue="NeurIPS">
-                    <div class="paper-content">
-                        <div class="paper-header">
-                            <span class="badge neurips">NeurIPS 2025 Workshop</span>
-                            <span class="badge award"><i class="fas fa-trophy"></i> Travel Award</span>
-                        </div>
-                        <h3 class="paper-title">A DELTA: Language Diffusion-based EEG-to-Text Architecture</h3>
-                        <p class="paper-authors"><strong>Mingyu Jeon</strong>, Hyobin Kim</p>
-                        <p class="paper-venue">NeurIPS Workshop on Foundation Models for the Brain and Body</p>
-                        <div class="paper-links">
-                            <!-- <a href="#" class="link-btn"><i class="fas fa-file-pdf"></i> PDF</a> -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Paper 2 -->
-                <div class="paper-card" data-year="2025" data-venue="CIKM">
-                    <div class="paper-content">
-                        <div class="paper-header">
-                            <span class="badge cikm">CIKM 2025 Workshop</span>
-                            <span class="badge oral"><i class="fas fa-microphone"></i> Oral</span>
-                        </div>
-                        <h3 class="paper-title">PPOGA: Predictive Plan-on-Graph with Action for Knowledge Graph QA</h3>
-                        <p class="paper-authors"><strong>Mingyu Jeon</strong>, Suwan Cho, Jae Young Suh</p>
-                        <p class="paper-venue">CIKM Workshop on Frontiers in Graph Machine Learning (GMLLM)</p>
-                    </div>
-                </div>
-
-                <!-- Paper 3 -->
-                <div class="paper-card" data-year="2025" data-venue="CIKM">
-                    <div class="paper-content">
-                        <div class="paper-header">
-                            <span class="badge cikm">CIKM 2025 Workshop</span>
-                            <span class="badge oral"><i class="fas fa-microphone"></i> Oral</span>
-                        </div>
-                        <h3 class="paper-title">A Modular Prototype of Emotion-Aware Proactive Conversational Agents</h3>
-                        <p class="paper-authors">Jae Young Suh, <strong>Mingyu Jeon</strong></p>
-                        <p class="paper-venue">CIKM Workshop on Proactive Conversational Information Seeking</p>
-                    </div>
-                </div>
-
-                <!-- Paper 4 -->
-                <div class="paper-card" data-year="2024" data-venue="NeurIPS">
-                    <div class="paper-content">
-                        <div class="paper-header">
-                            <span class="badge neurips">NeurIPS 2024 Workshop</span>
-                        </div>
-                        <h3 class="paper-title">Mimicking Human Emotions: Persona-Driven Behavior of LLMs in Negotiation</h3>
-                        <p class="paper-authors"><strong>Mingyu Jeon</strong>, Jaeyoung Suh</p>
-                        <p class="paper-venue">NeurIPS Workshop on Language Gamification</p>
-                    </div>
-                </div>
-
-                 <!-- Paper 5 -->
-                 <div class="paper-card" data-year="2025" data-venue="arXiv">
-                    <div class="paper-content">
-                        <div class="paper-header">
-                            <span class="badge arxiv">arXiv</span>
-                            <span class="badge review">Under Review</span>
-                        </div>
-                        <h3 class="paper-title">Schema Matching on Graph: Iterative Graph Exploration</h3>
-                        <p class="paper-authors"><strong>Mingyu Jeon</strong>, Jae Young Suh, Suwan Cho</p>
-                        <p class="paper-venue">arXiv preprint arXiv:2511.20285</p>
-                        <div class="paper-links">
-                             <a href="https://arxiv.org/abs/2511.20285" target="_blank" class="link-btn"><i class="fas fa-external-link-alt"></i> View</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="section">
-        <div class="container">
-            <h2 class="section-title">Experience & Education</h2>
-            <div class="timeline">
-                
-                <!-- Experience Item 1 -->
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <span class="date">2024.07 - Present</span>
-                        <h3>AI Research Engineer</h3>
-                        <h4>AIO2O Inc.</h4>
-                        <p>Developing Negotiation Strategy Engine for B2B commerce (KT Commerce). Built automated marketing content generation system (DB Insurance).</p>
-                    </div>
-                </div>
-
-                <!-- Experience Item 2 -->
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <span class="date">2024.12 - Present</span>
-                        <h3>Founder & Research Lead</h3>
-                        <h4>DE Lab (ModuLabs)</h4>
-                        <p>Leading Graph ML & LLM research. Published 4 papers at NeurIPS/CIKM 2025 Workshops.</p>
-                    </div>
-                </div>
-
-                <!-- Education Item 1 -->
-                <div class="timeline-item left education">
-                    <div class="timeline-content">
-                        <span class="date">2022.03 - 2024.02</span>
-                        <h3>M.S. in Business IT</h3>
-                        <h4>Kookmin University</h4>
-                        <p>GPA 4.11/4.5. Focused on Data Science and AI.</p>
-                    </div>
-                </div>
-
-                 <!-- Education Item 2 -->
-                 <div class="timeline-item right education">
-                    <div class="timeline-content">
-                        <span class="date">2020.03 - 2022.02</span>
-                        <h3>B.S. in Computer Engineering</h3>
-                        <h4>Academic Credit Bank System</h4>
-                        <p>GPA 4.2/4.5</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-                
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="assets/img/chat_thumbnail.jpg" alt="Vercel CharacterChat">
-                        <div class="overlay">
-                            <a href="https://github.com/tjwodud04/Vercel_CharacterChat" target="_blank"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Vercel CharacterChat</h3>
-                        <p>LLM-based Character Interaction Service. Open-source project for character-based interaction.</p>
-                        <div class="tags">
-                            <span>LLM</span>
-                            <span>Next.js</span>
-                            <span>Open Source</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="assets/img/estate_thumbnail.jpg" alt="KoreaEstate Query">
-                        <div class="overlay">
-                            <a href="https://github.com/tjwodud04/KoreaEstateQuery" target="_blank"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>KoreaEstate Query</h3>
-                        <p>Real estate data query system for Korean market analysis.</p>
-                        <div class="tags">
-                            <span>Data Analysis</span>
-                            <span>Python</span>
-                            <span>Real Estate</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <p>I'm always open to discussing new research opportunities and collaborations.</p>
-                <a href="mailto:jkmcoma7@gmail.com" class="email-link">jkmcoma7@gmail.com</a>
-                <div class="social-links">
-                    <a href="https://github.com/tjwodud04" target="_blank"><i class="fab fa-github"></i></a>
-                    <!-- <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a> -->
-                    <!-- <a href="#" target="_blank"><i class="fas fa-graduation-cap"></i></a> -->
-                </div>
-            </div>
+    <section id="education">
+        <h2>Education</h2>
+        <div id="education-list">
+            <!-- Rendered by JS -->
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Mingyu Jeon. All rights reserved.</p>
-        </div>
+        <p>&copy; 2026 Mingyu Jeon. Design inspired by <a href="https://jonbarron.info/" target="_blank">Jon Barron</a>.</p>
     </footer>
 
-    <script src="script.js"></script>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
