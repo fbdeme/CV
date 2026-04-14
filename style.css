@@ -102,6 +102,28 @@ ul li {
     color: #065f46;
 }
 
+.related-paper {
+    margin-top: 4px;
+    padding: 10px 14px;
+    background: #f9f9f9;
+    border-left: 3px solid #ddd;
+    font-size: 14px;
+    color: #555;
+}
+
+.related-label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.related-title {
+    font-weight: bold;
+    color: #555;
+}
+
 .desc {
     color: #666;
     font-size: 14px;
