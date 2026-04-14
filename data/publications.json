@@ -1,0 +1,205 @@
+{
+  "last_updated": "2026-04-14",
+  "source": "merged: semantic_scholar + google_scholar + manual",
+  "papers": [
+    {
+      "id": "icassp2026-eeg",
+      "title": "EEG-to-Text as Restoration: A Discrete Diffusion Framework for Robust BCI",
+      "authors": [
+        "Mingyu Jeon",
+        "Hyobin Kim"
+      ],
+      "venue": "ICASSP 2026",
+      "venue_full": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+      "year": 2026,
+      "type": "conference",
+      "badges": [
+        "ICASSP"
+      ],
+      "arxiv": null,
+      "doi": null,
+      "semantic_scholar_id": null,
+      "pdf": null,
+      "code": null,
+      "project": null,
+      "abstract": "Electroencephalogram (EEG)-to-text remains challenging due to high-dimensional noise, subject variability, and error accumulation in autoregressive decoding.",
+      "highlight": true,
+      "source": "google_scholar"
+    },
+    {
+      "id": "neurips2025-delta",
+      "title": "DELTA: Language Diffusion-based EEG-to-Text Architecture",
+      "authors": [
+        "Mingyu Jeon",
+        "Hyobin Kim"
+      ],
+      "venue": "NeurIPS 2025 Workshop",
+      "venue_full": "NeurIPS Workshop on Foundation Models for the Brain and Body",
+      "year": 2025,
+      "type": "workshop",
+      "badges": [
+        "NeurIPS",
+        "Travel Award"
+      ],
+      "arxiv": "2511.21746",
+      "doi": "10.48550/arXiv.2511.21746",
+      "semantic_scholar_id": "a785ba7d4d00faa579824f03c5d41f68160393b1",
+      "pdf": null,
+      "code": "https://github.com/fbdeme/DELTA-Language-Diffusion-based-EEG-to-Text-Architecture",
+      "project": null,
+      "abstract": "We introduce DELTA, which pairs a Residual Vector Quantization (RVQ) EEG tokenizer with a masked language diffusion model (LLaDA).",
+      "highlight": true,
+      "source": "semantic_scholar"
+    },
+    {
+      "id": "cikm2025-ppoga",
+      "title": "PPoGA: Predictive Plan-on-Graph with Action for Knowledge Graph Question Answering",
+      "authors": [
+        "Mingyu Jeon",
+        "Suwan Cho",
+        "Jae Young Suh"
+      ],
+      "venue": "CIKM 2025 Workshop",
+      "venue_full": "CIKM Workshop on Frontiers in Graph Machine Learning (GMLLM)",
+      "year": 2025,
+      "type": "workshop",
+      "badges": [
+        "CIKM",
+        "Oral"
+      ],
+      "arxiv": "2602.00007",
+      "doi": "10.48550/arXiv.2602.00007",
+      "semantic_scholar_id": "50c509d0300d700d451509959c4a7af489c28dfa",
+      "pdf": null,
+      "code": null,
+      "project": null,
+      "abstract": "We propose PPoGA, a novel KGQA framework inspired by human cognitive control and problem-solving.",
+      "highlight": true,
+      "source": "semantic_scholar"
+    },
+    {
+      "id": "cikm2025-emotion",
+      "title": "A Modular Prototype of Emotion-Aware Proactive Conversational Agents",
+      "authors": [
+        "Jae Young Suh",
+        "Mingyu Jeon"
+      ],
+      "venue": "CIKM 2025 Workshop",
+      "venue_full": "CIKM Workshop on Proactive Conversational Information Seeking",
+      "year": 2025,
+      "type": "workshop",
+      "badges": [
+        "CIKM",
+        "Oral"
+      ],
+      "arxiv": null,
+      "doi": null,
+      "semantic_scholar_id": null,
+      "pdf": null,
+      "code": null,
+      "project": null,
+      "abstract": null,
+      "highlight": false,
+      "source": "manual"
+    },
+    {
+      "id": "arxiv2025-smog",
+      "title": "Schema Matching on Graph: Iterative Graph Exploration for Efficient and Explainable Data Integration",
+      "authors": [
+        "Mingyu Jeon",
+        "Jae Young Suh",
+        "Suwan Cho"
+      ],
+      "venue": "arXiv (Under Review)",
+      "venue_full": "arXiv preprint arXiv:2511.20285",
+      "year": 2025,
+      "type": "preprint",
+      "badges": [
+        "Under Review"
+      ],
+      "arxiv": "2511.20285",
+      "doi": "10.48550/arXiv.2511.20285",
+      "semantic_scholar_id": "d3343468c62e8c8315146e811756c8689a2a1d4d",
+      "pdf": null,
+      "code": null,
+      "project": null,
+      "abstract": "This paper introduces SMoG, a novel framework that leverages iterative execution of simple 1-hop SPARQL queries for schema matching.",
+      "highlight": false,
+      "source": "semantic_scholar"
+    },
+    {
+      "id": "arxiv2025-negotiation",
+      "title": "How Far Can LLMs Emulate Human Behavior?: A Strategic Analysis via the Buy-and-Sell Negotiation Game",
+      "authors": [
+        "Mingyu Jeon",
+        "Jaeyoung Suh",
+        "Suwan Cho",
+        "Dohyeon Kim"
+      ],
+      "venue": "arXiv (Under Review)",
+      "venue_full": "arXiv preprint arXiv:2511.17990",
+      "year": 2025,
+      "type": "preprint",
+      "badges": [
+        "Under Review"
+      ],
+      "arxiv": "2511.17990",
+      "doi": "10.48550/arXiv.2511.17990",
+      "semantic_scholar_id": "90f05b0b937312f8eb198a068ae27c697f8c6654",
+      "pdf": null,
+      "code": null,
+      "project": null,
+      "abstract": "This work proposes a methodology to quantitatively evaluate the human emotional and behavioral imitation and strategic decision-making capabilities of LLMs.",
+      "highlight": false,
+      "source": "semantic_scholar"
+    },
+    {
+      "id": "neurips2024-negotiation",
+      "title": "Mimicking Human Emotions: Persona-Driven Behavior of LLMs in the Buy-and-Sell Negotiation Game",
+      "authors": [
+        "Mingyu Jeon",
+        "Jaeyoung Suh"
+      ],
+      "venue": "NeurIPS 2024 Workshop",
+      "venue_full": "NeurIPS Workshop on Language Gamification",
+      "year": 2024,
+      "type": "workshop",
+      "badges": [
+        "NeurIPS"
+      ],
+      "arxiv": null,
+      "doi": null,
+      "semantic_scholar_id": "bc4fb86339624ef67da83079a62be98dbe7b71fd",
+      "pdf": null,
+      "code": "https://github.com/fbdeme/Mimicking-Human-Emotions-Persona-Driven-Behavior-of-LLMs-in-the-Buy-and-Sell-Negotiation-Game",
+      "project": null,
+      "abstract": null,
+      "highlight": false,
+      "source": "semantic_scholar"
+    },
+    {
+      "id": "smartmedia2023",
+      "title": "텍스트 요약 품질 향상을 위한 의미적 사전학습 방법론",
+      "authors": [
+        "Mingyu Jeon",
+        "Namgyu Kim"
+      ],
+      "venue": "Smart Media Journal",
+      "venue_full": "스마트미디어저널 12(5)",
+      "year": 2023,
+      "type": "journal",
+      "badges": [
+        "Domestic"
+      ],
+      "arxiv": null,
+      "doi": null,
+      "semantic_scholar_id": null,
+      "pdf": null,
+      "code": null,
+      "project": null,
+      "abstract": null,
+      "highlight": false,
+      "source": "google_scholar"
+    }
+  ]
+}

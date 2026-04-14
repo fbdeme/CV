@@ -1,0 +1,55 @@
+{
+  "name": "Mingyu Jeon",
+  "name_ko": "전민규",
+  "role": "AI Research Engineer",
+  "affiliation": "AIO2O Inc.",
+  "affiliation_secondary": "Founder, DE Lab (ModuLabs)",
+  "email": "jkmcoma7@gmail.com",
+  "photo": "assets/img/prof_pic.jpg",
+  "bio": "I am a Research Engineer at <strong>AIO2O</strong> and the Founder of <strong>DE Lab (ModuLabs)</strong>. I received my M.S. in Business IT from <strong>Kookmin University</strong>. My research lies at the intersection of <strong>Large Language Models</strong> and <strong>Graph Machine Learning</strong>, with applications in Medical AI, Automated Negotiation, and Knowledge Graphs.",
+  "research_interests": [
+    "Large Language Models (LLMs)",
+    "Graph Machine Learning",
+    "Medical AI (EEG & Text)",
+    "Automated Negotiation",
+    "Knowledge Graphs & RAG"
+  ],
+  "links": {
+    "google_scholar": "https://scholar.google.com/citations?user=yOBj1nEAAAAJ",
+    "semantic_scholar": "https://www.semanticscholar.org/author/2387416140",
+    "orcid": "https://orcid.org/0009-0007-3360-8206",
+    "linkedin": "https://www.linkedin.com/in/%EB%AF%BC%EA%B7%9C-%EC%A0%84-758497285",
+    "github": "https://github.com/fbdeme"
+  },
+  "semantic_scholar_id": "2387416140",
+  "google_scholar_id": "yOBj1nEAAAAJ",
+  "orcid": "0009-0007-3360-8206",
+  "experience": [
+    {
+      "title": "AI Research Engineer",
+      "organization": "AIO2O Inc.",
+      "period": "2024.07 - Present",
+      "description": "Negotiation Strategy Engine for B2B commerce (KT Commerce). Automated marketing content generation (DB Insurance)."
+    },
+    {
+      "title": "Founder & Research Lead",
+      "organization": "DE Lab (ModuLabs)",
+      "period": "2024.12 - Present",
+      "description": "Leading Graph ML & LLM research. Published at NeurIPS/CIKM workshops."
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.S. in Business IT",
+      "institution": "Kookmin University",
+      "period": "2022.03 - 2024.02",
+      "gpa": "4.11/4.5"
+    },
+    {
+      "degree": "B.S. in Computer Engineering",
+      "institution": "Academic Credit Bank System",
+      "period": "2020.03 - 2022.02",
+      "gpa": "4.2/4.5"
+    }
+  ]
+}
